@@ -123,16 +123,24 @@ public class LoginActivity extends AppCompatActivity {
                         // task is successful is username is unique (new) on Firebase
                         if (task.isSuccessful())
                         {
-                            // Send a verification email
                             mUser = mAuth.getCurrentUser();
-                            Intent intent = new Intent(LoginActivity.this, TreasureActivity.class);
-                            startActivity(intent);
-                            finish();
+                            if (mUser.isEmailVerified()) {
+                                Intent intent = new Intent(LoginActivity.this, TreasureActivity.class);
+                                startActivity(intent);
+                                finish();
+                            }
+                            else
+                            {
+                                Toast.makeText(LoginActivity.this,
+                                        "Account not verified. Please check for verification email sent to "
+                                                + mUser.getEmail() + ", then sign in.",
+                                        Toast.LENGTH_SHORT).show();
+                            }
                         }
                         else
                         {
                             Toast.makeText(LoginActivity.this,
-                                    "Error signing in.",
+                                    "Invalid email or password.",
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
