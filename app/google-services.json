@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "339302218218",
+    "firebase_url": "https://treasuredlogin-f4409.firebaseio.com",
+    "project_id": "treasuredlogin-f4409",
+    "storage_bucket": "treasuredlogin-f4409.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339302218218:android:4c1806d8072db7d3",
+        "android_client_info": {
+          "package_name": "edu.miracostacollege.cs134.treasuredloginwcraycroft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "339302218218-qvdgovh7cibcis3306l0ceo2vgm13urp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.miracostacollege.cs134.treasuredloginwcraycroft",
+            "certificate_hash": "bca0f51c7329941349c17d4daeee736180708e6c"
+          }
+        },
+        {
+          "client_id": "339302218218-m78io2f727nud5r67e4pbsh73366nfpf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ZNxkQzva9any2uBV3KK68ETrixR4MX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "339302218218-m78io2f727nud5r67e4pbsh73366nfpf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
